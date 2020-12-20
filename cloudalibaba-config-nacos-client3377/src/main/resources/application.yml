@@ -1,0 +1,9 @@
+spring:
+  profiles:
+#    active: dev
+#    active: test
+    active: info
+
+local:
+  nacos:
+    config: ${config.info:not found}
